@@ -1,0 +1,17 @@
+@import "node_modules/modern-normalize/modern-normalize.css";
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.2rem;
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: "Montserrat", Arial, sans-serif;
+}
