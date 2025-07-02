@@ -1,5 +1,5 @@
 @import "node_modules/modern-normalize/modern-normalize.css";
-
+@import url("./header.css");
 * {
     box-sizing: border-box;
 }
@@ -14,4 +14,12 @@ body {
     max-width: 1440px;
     margin: 0 auto;
     font-family: "Montserrat", Arial, sans-serif;
+    border: 1px solid aqua;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid cadetblue;
 }

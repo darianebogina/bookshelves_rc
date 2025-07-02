@@ -1,0 +1,32 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 5px;
+    gap: 5px;
+    background-color: rgb(242,240,223);
+    border: 1px solid cadetblue;
+}
+
+.logo__link {
+    color: black;
+    text-decoration: none;
+    border: 1px solid hotpink;
+}
+.logo {
+    border: 1px solid khaki;
+}
+
+.search__field {
+     border: 1px solid hotpink;
+}
+
+.contacts {
+    /* width: 50px; */
+    border: 1px solid crimson;
+}
+
+.contacts img {
+    max-width: 5rem;
+    border: 1px solid rebeccapurple;
+}
