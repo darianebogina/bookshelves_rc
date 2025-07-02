@@ -18,15 +18,19 @@
 }
 
 .search__field {
+    max-width: 19rem;
      border: 1px solid hotpink;
 }
 
+.input {
+    max-width: 15rem;
+}
+
 .contacts {
-    /* width: 50px; */
     border: 1px solid crimson;
 }
 
 .contacts img {
-    max-width: 5rem;
+    max-width: 3rem;
     border: 1px solid rebeccapurple;
 }
