@@ -1,5 +1,7 @@
 @import "node_modules/modern-normalize/modern-normalize.css";
 @import url("./header.css");
+@import url("./card.css");
+
 * {
     box-sizing: border-box;
 }
@@ -17,9 +19,9 @@ body {
     border: 1px solid aqua;
 }
 
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    border: 1px solid cadetblue;
+.main {
+    padding: 20px 45px;
+    /* margin: 0 auto; */
+    border: 1px solid rgb(255, 13, 0);
+    background-color: rgb(134,142,124);
 }

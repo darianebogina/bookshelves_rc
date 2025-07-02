@@ -1,0 +1,26 @@
+.books__cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+    gap: 12px;
+    border: 1px solid black;
+}
+
+.book {
+    width: 100%;
+    max-width: 300px;
+    height: 340px;
+    border-radius: 20px;
+    background: rgb(240,215,203);
+    cursor: pointer;
+    transition: 50ms;
+}
+
+.book img {
+  width: 100%;
+  max-width: 300px;
+  height: 230px;
+  border-radius: 20px;
+  border: 1px solid red;
+}
