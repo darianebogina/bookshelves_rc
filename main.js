@@ -42,20 +42,24 @@ function createCard(arrayOfObj) {
         image.alt = "book_img";
         book.appendChild(image);
 
+        let container = document.createElement("div");
+        container.classList.add("book__content");
+        book.appendChild(container);
+
         let title = document.createElement("h4");
         title.classList.add("book__title");
         title.textContent = arrayOfObj[i].title;
-        book.appendChild(title);
+        container.appendChild(title);
 
         let author = document.createElement("h5");
         author.classList.add("book__author");
         author.textContent = arrayOfObj[i].author;
-        book.appendChild(author);
+        container.appendChild(author);
 
         let description = document.createElement("p");
         description.classList.add("book__description");
         description.textContent = arrayOfObj[i].description;
-        book.appendChild(description);
+        container.appendChild(description);
 
         content.appendChild(book);
     }

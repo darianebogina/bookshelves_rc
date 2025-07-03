@@ -1,21 +1,21 @@
 .books__cards {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    height: auto;
-    gap: 12px;
-    border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: auto;
+  gap: 12px;
+  border: 1px solid black;
 }
 
 .book {
-    width: 100%;
-    max-width: 250px;
-    height: 390px;
-    padding: 5px 5px;
-    border-radius: 20px;
-    background: rgb(240,215,203);
-    cursor: pointer;
-    transition: 50ms;
+  width: 100%;
+  max-width: 250px;
+  height: 410px;
+  padding: 5px 5px;
+  border-radius: 20px;
+  background: rgb(240, 215, 203);
+  cursor: pointer;
+  transition: 50ms;
 }
 
 .book img {
@@ -24,4 +24,36 @@
   height: 235px;
   border-radius: 20px;
   border: 1px solid red;
+}
+
+.book__content {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-height: 145px;
+  gap: 6px;
+  /* text-overflow: ellipsis; */
+  border: 1px solid red;
+}
+
+.book__title {
+  font-size: 1.6rem;
+  margin: 0;
+  /* padding: 0; */
+  border: 1px solid red;
+}
+
+.book__author {
+  font-size: 1.2rem;
+  margin: 0;
+  border: 1px solid red;
+}
+
+.book__description {
+  border: 1px solid purple;
+  max-height: 145px;
+  /* white-space: nowrap; */
+  overflow: hidden;
+  /* text-overflow: ellipsis; */
 }
