@@ -13,10 +13,22 @@
         <a href="./index.html" class="logo__link">
             <h1 class="logo">i&#x2665;Books</h1>
         </a>
-        <div class="search__field">
-            <input type="text" value="Type here..." class="input" onfocus="clearInput()">
-            <button class="search__button" onclick="queryBooks()">&#128269;</button>
+        <div class="user__field">
+            <div class="search__field">
+                <input type="text" value="" placeholder="Type here..." class="input" onfocus="clearInput()">
+                <button class="search__button" onclick="queryBooks()">&#128269;</button>
+            </div>
+            <div class="filter">
+                <select name="books" class="filter__books" onchange="queryBooks()">
+                    <option value="ebooks">ebooks</option>
+                    <option value="free-ebooks">free ebooks</option>
+                    <option value="full">full text available</option>
+                    <option value="paid-ebooks">paid ebooks</option>
+                    <option value="partial">partial text available</option>
+                </select>
+            </div>
         </div>
+
         <a href="https://github.com/darianebogina" class="contacts">
             <img src="./github-mark.svg" alt="git_logo">
         </a>

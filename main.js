@@ -1,15 +1,22 @@
-// https://www.googleapis.com/books/v1/volumes?q={search terms}
-const url = "https://www.googleapis.com/books/v1/volumes?q=";
+// https://www.googleapis.com/books/v1/volumes?q=java&filter=ebook
 let query = "javascript";
-const endUrl = "";
+let filter = "ebooks";
+const url = "https://www.googleapis.com/books/v1/volumes?q={query}&filter={filter}";
 
 const content = document.getElementsByClassName("books__cards")[0];
 const input = document.getElementsByClassName('input')[0];
 const button = document.getElementsByClassName('search__button')[0];
+const select = document.getElementsByClassName('filter__books')[0];
 
 async function getBooks() {
-    let response = await fetch(url + query + endUrl);
+    let currentUrl = url.replace('{query}', query).replace('{filter}', filter);
+
+    let response = await fetch(currentUrl);
     let result = await response.json();
+    if (result.totalItems == 0) {
+        alert("No books found");
+        return;
+    }
     let items = result.items;
     console.log(items);
     let arrayOfObj = [];
@@ -34,6 +41,9 @@ async function getBooks() {
 }
 
 function createCard(arrayOfObj) {
+    if (arrayOfObj == undefined) {
+        return;
+    }
     content.innerHTML = "";
     for (let i = 0; i < arrayOfObj.length; i += 1) {
         let book = document.createElement("div");
@@ -68,7 +78,13 @@ function createCard(arrayOfObj) {
 }
 
 function queryBooks() {
+    if (input.value == "") {
+        alert("Please input book name");
+    }
+
     query = input.value;
+    filter = select.value;
+    console.log(filter);
     getBooks().then(data => createCard(data));
 }
 
