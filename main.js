@@ -3,7 +3,9 @@ const url = "https://www.googleapis.com/books/v1/volumes?q=";
 let query = "javascript";
 const endUrl = "";
 
-let content = document.getElementsByClassName("books__cards")[0];
+const content = document.getElementsByClassName("books__cards")[0];
+const input = document.getElementsByClassName('input')[0];
+const button = document.getElementsByClassName('search__button')[0];
 
 async function getBooks() {
     let response = await fetch(url + query + endUrl);
@@ -63,6 +65,15 @@ function createCard(arrayOfObj) {
 
         content.appendChild(book);
     }
+}
+
+function queryBooks() {
+    query = input.value;
+    getBooks().then(data => createCard(data));
+}
+
+function clearInput() {
+    input.value = "";
 }
 
 getBooks().then(data => createCard(data));
