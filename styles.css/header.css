@@ -20,6 +20,7 @@
 .user__field {
     display: flex;
     flex-direction: column;
+    margin: 3px;
     gap: 5px;
     max-width: 22rem;
 }
@@ -63,7 +64,7 @@
 
 #star path{
     fill: transparent;
-    transition: fill 0.4s ease-in-out;
+    transition: fill 0.35s ease-in-out;
 }
 
 #star:hover path{
