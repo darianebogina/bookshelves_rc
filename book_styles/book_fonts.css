@@ -14,7 +14,11 @@ h3 {
     font-size: 1.8rem;
 }
 
+.desc__info * {
+    font-size: 1.55rem;
+    list-style-position: inside;
+}
+
 .desc__elem {
-    font-weight: 400;
     font-size: 1.55rem;
 }

@@ -40,6 +40,7 @@ async function getBooks() {
             title: info.title || titleDefault,
             author: info.authors ? info.authors.join(", ") : authorDefault,
             description: info.description || descriptionDefault,
+            bookID: items[i].id,
         });
     }
     console.log(arrayOfObj);
@@ -96,7 +97,7 @@ function createCard(arrayOfObj) {
         book.addEventListener('click', function (e) {
             if (e.target.closest('book__fav')) return;
 
-            window.location.href = 'book.html';
+            window.location.href = `book.html?bookID=${arrayOfObj[i].bookID}`;
         });
     }
 }
