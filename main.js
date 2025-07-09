@@ -26,7 +26,7 @@ async function getBooks() {
     }
     let items = result.items;
     let arrayOfObj = [];
-
+    console.log(items);
     for (let i = 0; i < items.length; i += 1) {
         let info = items[i].volumeInfo;
         let imgDefault = "https://placeholdit.com/290x230/dddddd/999999?text=no+photo";
@@ -92,6 +92,12 @@ function createCard(arrayOfObj) {
         container.appendChild(description);
 
         content.appendChild(book);
+
+        book.addEventListener('click', function (e) {
+            if (e.target.closest('book__fav')) return;
+
+            window.location.href = 'book.html';
+        });
     }
 }
 

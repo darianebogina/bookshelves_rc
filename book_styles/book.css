@@ -1,0 +1,84 @@
+@import url("../main_styles/style.css");
+@import url("../main_styles/header.css");
+@import url("./book_fonts.css");
+
+.main__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.book__name {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 650px;
+    width: 100%;
+    gap: 5px;
+    padding-left: 20px;
+}
+
+.book__section {
+    display: flex;
+    padding: 20px;
+    gap: 60px;
+}
+
+.image__wrapper {
+    width: 100%;
+    max-width: 400px;
+}
+
+.image__wrapper img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.book__info {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 1008px;
+    width: 100%;
+    gap: 12px;
+    padding: 7px;
+
+    background-color: rgb(242, 240, 223);
+    border-radius: 20px;
+}
+
+.info__section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.info__component {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@media (max-width: 768px) {
+    .book__name {
+        padding-left: 0;
+    }
+
+    .book__section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .info {
+        min-width: 200px;
+    }
+
+    .info__section {
+        gap: 10px;
+    }
+}
