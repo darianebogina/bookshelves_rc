@@ -71,6 +71,11 @@
     fill: goldenrod;
 }
 
+#star.active path {
+  fill: goldenrod;
+}
+
+
 @media (max-width: 424px) {
     .search__field {
         max-width: 18rem;
