@@ -83,6 +83,13 @@ function throttle(func, delay) {
     };
 }
 
+function clearInput() {
+    input.value = "";
+}
+
+window.clearInput = clearInput;
+window.queryBooks = queryBooks;
+
 const throttledUpdate = throttle(() =>
     getBooks().then(result => createCard(createBookObjects(result)))
     , 900);

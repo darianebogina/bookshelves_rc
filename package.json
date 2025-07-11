@@ -1,0 +1,25 @@
+{
+  "name": "bookshelves_rc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darianebogina/bookshelves_rc.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darianebogina/bookshelves_rc/issues"
+  },
+  "homepage": "https://github.com/darianebogina/bookshelves_rc#readme",
+  "devDependencies": {
+    "vite": "^7.0.4"
+  }
+}
