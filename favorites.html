@@ -1,32 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Books Favs</title>
     <link rel="icon" type="image/x-icon" href="./images/book.ico">
     <link rel="stylesheet" href="./main_styles/style.css">
+    <link rel="stylesheet" href="./main_styles/special_header.css">
+    
 </head>
+
 <body>
-     <header class="header">
+    <header class="header">
         <a href="./index.html" class="logo__link">
             <h1 class="logo">i&#x2665;Books</h1>
         </a>
-        <div class="user__field">
-            <div class="search__field">
-                <input type="text" value="" placeholder="Type here..." class="input" onfocus="clearInput()">
-                <button class="search__button" onclick="queryBooks()">&#128269;</button>
-            </div>
-            <div class="filter">
-                <select name="books" class="filter__books" onchange="queryBooks()">
-                    <option value="ebooks">ebooks</option>
-                    <option value="free-ebooks">free ebooks</option>
-                    <option value="full">full text available</option>
-                    <option value="paid-ebooks">paid ebooks</option>
-                    <option value="partial">partial text available</option>
-                </select>
-            </div>
-        </div>
         <div class="header__icons">
             <a href="./favorites.html" class="icon">
                 <svg id="star" width="30px" height="30px" viewBox="0 0 24 24" fill="none"
@@ -60,7 +49,6 @@
         </div>
     </section>
 </body>
-<script src="./scripts/favorite.js"></script>
-
+<script type="module" src="./scripts/favorite.js"></script>
 </body>
 </html>

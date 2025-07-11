@@ -1,11 +1,18 @@
 @import url("../main_styles/style.css");
 @import url("../main_styles/header.css");
 @import url("./book_fonts.css");
+@import url("../main_styles/special_header.css");
 
 .main__wrapper {
     display: flex;
     flex-direction: column;
 }
+/* 
+.header {
+    height: 50px;
+    justify-content: space-between;
+    padding: 0 65px;
+} */
 
 .book__name {
     display: flex;
