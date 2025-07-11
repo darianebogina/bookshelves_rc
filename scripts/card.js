@@ -72,6 +72,9 @@ function favorites(bookObj, book) {
     if (index !== -1) {
         favorite.splice(index, 1);
         star.classList.remove("active");
+        if (window.location.pathname.endsWith("favorites.html")) {
+            book.remove();
+        }
     }
     else {
         favorite.push(bookObj);
