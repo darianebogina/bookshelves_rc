@@ -1,0 +1,11 @@
+.header {
+    height: 50px;
+    justify-content: space-between;
+    padding: 0 65px;
+}
+
+@media (max-width: 768px) {
+    .header__icons {
+        flex-direction: row;
+    }
+}

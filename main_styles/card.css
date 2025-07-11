@@ -1,0 +1,85 @@
+.books__cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: auto;
+  gap: 12px;
+}
+
+.book {
+  width: 100%;
+  max-width: 250px;
+  height: 410px;
+  padding: 5px 5px;
+  border-radius: 20px;
+  background: rgb(240, 215, 203);
+  cursor: pointer;
+
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+.book:hover {
+  box-shadow: 0 0 25px rgb(76, 99, 48);
+}
+
+.book img {
+  width: 100%;
+  max-width: 250px;
+  height: 235px;
+  border-radius: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.book__info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+  max-width: 245px;
+  padding: 0;
+  gap: 6px;
+}
+
+.book__fav {
+  width: fit-content;
+  height: fit-content;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.book__title {
+  width: 100%;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  font-size: 1.6rem;
+}
+
+.book__author {
+  width: 100%;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  font-size: 1.2rem;
+}
+
+.book__description {
+  width: 100%;
+  max-height: 120px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  line-clamp: 4;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

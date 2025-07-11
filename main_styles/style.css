@@ -1,0 +1,25 @@
+@import url("./header.css");
+@import url("./card.css");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.2rem;
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: "Montserrat", Arial, sans-serif;
+}
+
+.main {
+    padding: 20px 45px;
+    background-color: rgb(134,142,124);
+}
